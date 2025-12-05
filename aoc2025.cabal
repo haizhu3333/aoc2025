@@ -1,0 +1,32 @@
+cabal-version:      3.4
+name:               aoc2025
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+author:             Hai Zhu
+maintainer:         halleyzhu@gmail.com
+build-type:         Simple
+data-files:         inputs/*.txt
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  ReadInput
+    other-modules:    Paths_aoc2025
+    autogen-modules:  Paths_aoc2025
+    build-depends:    base ^>=4.21.0.0
+                    , megaparsec
+                    , text
+    hs-source-dirs:   lib
+    default-language: GHC2024
+
+executable day01
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , megaparsec
+    hs-source-dirs:   day01
+    default-language: GHC2024
