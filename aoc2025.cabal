@@ -40,3 +40,13 @@ executable day02
                     , megaparsec
     hs-source-dirs:   day02
     default-language: GHC2024
+
+executable day03
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , text
+                    , vector
+    hs-source-dirs:   day03
+    default-language: GHC2024
