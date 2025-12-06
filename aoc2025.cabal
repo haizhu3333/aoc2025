@@ -10,6 +10,7 @@ data-files:         inputs/*.txt
 
 common warnings
     ghc-options: -Wall
+    default-extensions: NegativeLiterals
 
 library
     import:           warnings
@@ -17,6 +18,8 @@ library
     other-modules:    Paths_aoc2025
     autogen-modules:  Paths_aoc2025
     build-depends:    base ^>=4.21.0.0
+                    , bytestring
+                    , massiv
                     , megaparsec
                     , text
     hs-source-dirs:   lib
@@ -49,4 +52,13 @@ executable day03
                     , text
                     , vector
     hs-source-dirs:   day03
+    default-language: GHC2024
+
+executable day04
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , massiv
+    hs-source-dirs:   day04
     default-language: GHC2024
