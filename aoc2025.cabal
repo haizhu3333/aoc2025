@@ -62,3 +62,22 @@ executable day04
                     , massiv
     hs-source-dirs:   day04
     default-language: GHC2024
+
+executable day05
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , containers
+                    , megaparsec
+    hs-source-dirs:   day05
+    default-language: GHC2024
+
+executable day06
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , massiv
+    hs-source-dirs:   day06
+    default-language: GHC2024
