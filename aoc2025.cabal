@@ -81,3 +81,13 @@ executable day06
                     , massiv
     hs-source-dirs:   day06
     default-language: GHC2024
+
+executable day07
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , containers
+                    , massiv
+    hs-source-dirs:   day07
+    default-language: GHC2024
