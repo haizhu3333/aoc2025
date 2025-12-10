@@ -91,3 +91,14 @@ executable day07
                     , massiv
     hs-source-dirs:   day07
     default-language: GHC2024
+
+executable day08
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , equivalence
+                    , megaparsec
+                    , vector
+    hs-source-dirs:   day08
+    default-language: GHC2024
