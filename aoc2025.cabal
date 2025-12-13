@@ -102,3 +102,12 @@ executable day08
                     , vector
     hs-source-dirs:   day08
     default-language: GHC2024
+
+executable day09
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , megaparsec
+    hs-source-dirs:   day09
+    default-language: GHC2024
