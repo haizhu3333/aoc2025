@@ -14,7 +14,7 @@ common warnings
 
 library
     import:           warnings
-    exposed-modules:  ReadInput
+    exposed-modules:  ReadInput, Geometry
     other-modules:    Paths_aoc2025
     autogen-modules:  Paths_aoc2025
     build-depends:    base ^>=4.21.0.0
