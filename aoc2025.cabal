@@ -124,3 +124,14 @@ executable day10
                     , process
     hs-source-dirs:   day10
     default-language: GHC2024
+
+executable day11
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , megaparsec
+                    , text
+                    , unordered-containers
+    hs-source-dirs:   day11
+    default-language: GHC2024
