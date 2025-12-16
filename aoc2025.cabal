@@ -11,6 +11,8 @@ data-files:         inputs/*.txt
 common warnings
     ghc-options: -Wall
     default-extensions: NegativeLiterals
+                      , OverloadedStrings
+                      , RecordWildCards
 
 library
     import:           warnings
@@ -110,4 +112,15 @@ executable day09
                     , aoc2025
                     , megaparsec
     hs-source-dirs:   day09
+    default-language: GHC2024
+
+executable day10
+    import:           warnings
+    main-is:          Main.hs
+    other-modules:    SMT
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , megaparsec
+                    , process
+    hs-source-dirs:   day10
     default-language: GHC2024
