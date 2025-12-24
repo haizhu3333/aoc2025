@@ -135,3 +135,13 @@ executable day11
                     , unordered-containers
     hs-source-dirs:   day11
     default-language: GHC2024
+
+executable day12
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.21.0.0
+                    , aoc2025
+                    , foldl
+                    , megaparsec
+    hs-source-dirs:   day12
+    default-language: GHC2024
